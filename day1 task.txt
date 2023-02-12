@@ -1,0 +1,36 @@
+Diffenrence between Http1 and Http2
+Http1;
+It uses works on the textual format.
+There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+It uses requests resource Inlining for use getting multiple pages
+It compresses data by itself.
+These are the drawbacks that lead to the creation of HTTP/2: The first problem is HTTP/1.1 transfer all the requests & responses in the plain text message form. 
+The second one is head of line blocking in which TCP connection is blocked all other requests until the response does not receive.
+ all the information related to the header file is repeated in every request.
+
+
+Http 2;
+It works on the binary protocol.
+It allows multiplexing so one TCP connection is required for multiple requests.
+It uses PUSH frame by server that collects all multiple pages.It uses HPACK for data compression.
+HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format.
+it works on fully multiplexed that is one TCP connection is used for multiple requests. 
+HTTP/2 uses HPACK which is used to split data from header. 
+it compresses the header. 
+The server sends all the other files like CSS & JS without the request of the client using the PUSH frame.
+
+2)write a blog about object and its internal representation
+
+Objects, in JavaScript, is it’s most important data-type in JavaScript.
+These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol) 
+in the sense that while these primitive data-types all store a single value each (depending on their types).
+there are three ways to create object.this object is copy by refernce value.
+if anything we alternate values in the object it copy by total address in the memories called temporal dead zone.
+1)object literal
+2)creating instant of object directly
+3)using an object as constructor
+
+  
+
+
+
