@@ -21,15 +21,26 @@ The server sends all the other files like CSS & JS without the request of the cl
 
 2)write a blog about object and its internal representation
 
-Objects, in JavaScript, is it’s most important data-type in JavaScript.
-These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol) 
-in the sense that while these primitive data-types all store a single value each (depending on their types).
-there are three ways to create object.this object is copy by refernce value.
-if anything we alternate values in the object it copy by total address in the memories called temporal dead zone.
-1)object literal
-2)creating instant of object directly
-3)using an object as constructor
+* An object is a collection of properties, and a property is an association between a name (or key) and a value. 
+	* A property's value can be a function, in which case the property is known as a method.
+	* Objects are more complex and each object may contain any combination of these primitive data-types as well as 
+	  reference data-types.
+	* An object, is a reference data type. 
+	* Variables that are assigned a reference value are given a reference or a pointer to that value. 
+	* That reference or pointer points to the location in memory where the object is stored. 
+	* The variables don’t actually store the value.
 
+Every object has some property associated with some value.
+
+These values can be accessed using these properties associated with them.
+
+var myCar = new Object();
+
+myCar.model = 'Hyundai';
+
+myCar.year = 2020;
+
+myCar.wheels = 4;
   
 
 
